@@ -5,15 +5,15 @@ import { useEffect, useState } from 'react';
 function App() {
   return (
     <div className="App">
-    <ExternalUsers></ExternalUsers>
+    <ExternalUsers></ExternalUsers> {/* 4rd step (connect with state) */}
     </div>
   );
 }
 function ExternalUsers(){
-  const [users,setUsers] = useState([]); // 1st step
+  const [users,setUsers] = useState([]); // 1st step (use of 'useState')
   // useEffect( () =>{ }, [])  // arrow function
-  useEffect( () =>{ 
-    fetch('https://jsonplaceholder.typicode.com/users')
+  useEffect( () =>{  // 2st step  (use of 'useEffect')
+    fetch('https://jsonplaceholder.typicode.com/users') // 3rd step(data load)
     .then(res => res.json())
     .then(data => setUsers(data));
   },[]);
@@ -21,7 +21,7 @@ function ExternalUsers(){
   return (
      <div>
       <h1>External users : {users.length}</h1>
-      {
+      {   // 5th show data using 'map()'
         users.map(user => <User name = {user.username} email={user.email} id={user.id}></User>)
       }
      </div>
