@@ -31,9 +31,9 @@ function User (props){
   // console.log(props)
    return (
     <div style={{color:"green",border: "2px solid gray",margin:'20px',padding:'15px',borderRadius: "10px"}}>
-      <h1>the user is :{props.name}</h1>
-      <h3>the userId is :{props.id}</h3>
-      <p>emailId is :{props.email}</p>
+      <h1>the user is : {props.name}</h1>
+      <h3>the user Id is : {props.id}</h3>
+      <p>email Id is : {props.email}</p>
     </div>
    )
 }
