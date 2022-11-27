@@ -5,6 +5,15 @@ import { useState } from 'react';
 function App() {
   return (
     <div className="App">
+      {/* <Counter></Counter> */}
+    </div>
+  );
+}
+
+{/* video-7 
+  function App() {
+  return (
+    <div className="App">
       <Counter></Counter>
     </div>
   );
@@ -28,6 +37,7 @@ function Counter(){
     
     )
 }
+*/}
 
 
 {/*  (normal example video: 6...step..1 uporer theke)
